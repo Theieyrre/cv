@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Merienda&display=swap');
+
 body {
   background-color: #dbe2ef;
 }
@@ -20,6 +23,21 @@ h3 {
   color : #3f72af;
 }
 
-thead {
-  background-color: #3f72af;
+ul {
+  list-style-type: none;
+  list-style-position: inside;
 }
+
+.nav-link {
+  display: inline-block;
+  font-family: "Bad Script";
+  font-size: 1.5rem;
+}
+ .site-title {
+   font-family: "Bad Script";
+   font-size: 2rem;
+ }
+
+ #header {
+   margin: 2rem 1rem;
+ }
