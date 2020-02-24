@@ -1,50 +1,35 @@
-
-* {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: "Tillium Web";
-  background-color: rgb(205, 220, 223);
-  font-size: 1.2rem;
+html {
+  background: url(/images/pattern.jpg);
 }
 
-.navbar {
+nav {
+  position: relative;
+  top: 10%;
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  right: 10%;
+  top: 30%;
   display: flex;
   justify-content: space-between;
-  padding: 5vh 10vw;
 }
 
-.logo {
-  font-family: "Poiret One";
-  letter-spacing: 0.5rem;
+nav img {
+  display: inline-block;
+  max-width: 17rem;
+  margin-left: 10%;
 }
 
-.nav-link {
-  border: 3px solid rgb(227, 240, 242);
-  border-radius: 1.5rem;
-  box-shadow: 4px 5px 10px 0px rgba(0, 28, 28, 0.75),
-              -4px -5px 10px 0px rgba(232, 232, 232, 0.75);
+nav li a{
+  font-size: 2rem;
+  margin: 2rem;
   text-decoration: none;
-  color: #5e676e;
-  font-size: 1.2rem;
-  letter-spacing: 0.3rem;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.nav-link:hover {
-  box-shadow: -6px -8px 10px 0px rgba(232, 232, 232, 0.75);
-  transform: translate(10%,10%);
-}
-
-.bio {
-  width: 50vw;
-  background-color: white;
-  box-shadow: 10px 10px 10px 2px rgba(173, 170, 170, 0.75);
-  border-radius: 1rem;
-  margin-left: 25vw;
-  padding: 0.5rem;
 }
