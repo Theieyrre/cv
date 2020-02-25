@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Roboto:400,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  background: url(/images/pattern.jpg);
+body {
+  font-family: "Roboto";
+  user-select: none;
 }
 
 nav {
@@ -28,8 +31,96 @@ nav img {
   margin-left: 10%;
 }
 
+nav label {
+  position: absolute;
+  top: 30%;
+  font-size: 2rem;
+  font-family: "Josefin Slab";
+  font-weight: 700;
+}
+
 nav li a{
   font-size: 2rem;
+  font-family: "Josefin Slab";
   margin: 2rem;
   text-decoration: none;
+  color: #000;
+}
+
+.cta {
+  font-family: "Josefin Slab";
+  margin-top: 5rem;
+  font-size: 2rem;
+  margin-left: 10%;
+}
+
+.cta .backend {
+  border-left: 5px solid rgb(97, 97, 97);
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  color: rgb(97, 97, 97);
+}
+
+.title {
+  margin-top: 5rem;
+}
+
+.sites {
+  display: grid;
+  grid-template-columns: 15rem 15rem;
+}
+
+.site {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 20%;
+  border: none;
+  position: relative;
+  top: 2rem;
+  transition: all 0.5s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.site:hover, site:focus {
+  top: 1rem;
+}
+
+.sites__item {
+  width: 10rem;
+}
+
+.site__text {
+  opacity: 0;
+  height: 100%;
+  padding-top: 85%;
+  font-family: "Josefin Slab";
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.site__text:hover {
+  margin-top: 20%;
+  opacity: 1;
+}
+
+#stafy {
+  background: url(../images/stafy.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#stafy>.site__text {
+  color: red;
+}
+
+#bikepass {
+  background: url(../images/bikepass.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#bikepass>.site__text {
+  color: #6d70c6;
 }
