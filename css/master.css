@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Nova+Mono|Sacramento&display=swap');
 
 *{
   margin: 0;
@@ -6,9 +6,39 @@
   box-sizing: border-box;
 }
 
+:root{
+  --opacity: 0;
+  --opacity1: 0;
+  --opacity2: 0;
+  --opacity3: 0;
+  --opacity4: 0;
+  --opacity5: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Roboto";
+  font-family: "Handlee";
   user-select: none;
+}
+
+h4 {
+  padding-top: 10rem;
+  font-family: "Handlee";
+  color: rgb(131, 130, 130);
+}
+
+h4:after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  left: 30rem;
+  border-right: 3px solid rgb(66, 66, 66);
+  border-bottom: 3px solid rgb(66, 66, 66);
+  transform: rotate(45deg);
 }
 
 nav {
@@ -34,28 +64,28 @@ nav img {
 nav label {
   position: absolute;
   top: 30%;
-  font-size: 2rem;
-  font-family: "Josefin Slab";
+  font-size: 2.3rem;
+  font-family: "Sacramento";
   font-weight: 700;
 }
 
 nav li a{
   font-size: 2rem;
-  font-family: "Josefin Slab";
+  font-family: "Handlee";
   margin: 2rem;
   text-decoration: none;
-  color: #000;
+  color: rgb(39, 38, 38);
 }
 
-.cta {
-  font-family: "Josefin Slab";
+section {
+  font-family: "Nova Mono";
   margin-top: 5rem;
   font-size: 2rem;
   margin-left: 10%;
+  height: 70vh;
 }
 
-.cta .backend {
-  border-left: 5px solid rgb(97, 97, 97);
+.root .backend {
   margin-left: 0.5rem;
   padding-left: 0.5rem;
   color: rgb(97, 97, 97);
@@ -84,6 +114,16 @@ nav li a{
 
 .site:hover, site:focus {
   top: 1rem;
+  --opacity: 1;
+}
+
+.sites__desc {
+  font-size: 2rem;
+  font-family: "Handlee";
+  width: 25rem;
+  margin-top: 2rem;
+  opacity: var(--opacity);
+  text-align: left;
 }
 
 .sites__item {
@@ -94,7 +134,7 @@ nav li a{
   opacity: 0;
   height: 100%;
   padding-top: 85%;
-  font-family: "Josefin Slab";
+  font-family: "Nova Mono";
   font-size: 1.5rem;
   font-weight: 700;
   transition: all 0.5s ease;
@@ -124,3 +164,24 @@ nav li a{
 #bikepass>.site__text {
   color: #6d70c6;
 }
+
+.designs {
+  display: grid;
+  grid-template-columns: 18rem 20rem 18rem;
+}
+
+.designs img {
+  max-height: 15rem;
+}
+
+a, a:visited {
+  color: rgb(109, 109, 109);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+
