@@ -8,16 +8,11 @@
 
 :root{
   --opacity: 0;
-  --opacity1: 0;
-  --opacity2: 0;
-  --opacity3: 0;
-  --opacity4: 0;
-  --opacity5: 0;
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 0.8vw;
+  font-size: 1.1vw;
 }
 
 body {
@@ -26,9 +21,9 @@ body {
 }
 
 h4 {
-  padding-top: 15rem;
+  padding-top: 12rem;
   position: absolute;
-  left: 55rem;
+  left: 38rem;
   top: 15rem;
   font-family: "Handlee";
   color: rgb(131, 130, 130);
@@ -67,7 +62,7 @@ nav label {
 section {
   font-family: "Nova Mono";
   margin-top: 5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -108,7 +103,7 @@ section h2 {
 }
 
 .sites__desc {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Handlee";
   width: 25rem;
   margin-top: 2rem;
@@ -182,6 +177,14 @@ a:hover {
   color: rgb(44, 44, 44);
   cursor: pointer;
   font-size: 2.1rem;
+}
+
+section a{
+  font-size: 1.5rem;
+}
+
+section a:hover{
+  font-size: 1.6rem;
 }
 
 #cta {
