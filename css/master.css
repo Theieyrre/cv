@@ -46,15 +46,6 @@ nav {
   top: 10%;
 }
 
-nav ul {
-  list-style: none;
-  position: absolute;
-  right: 10%;
-  top: 30%;
-  display: flex;
-  justify-content: space-between;
-}
-
 nav img {
   display: inline-block;
   max-width: 17rem;
@@ -69,20 +60,12 @@ nav label {
   font-weight: 700;
 }
 
-nav li a{
-  font-size: 2rem;
-  font-family: "Handlee";
-  margin: 2rem;
-  text-decoration: none;
-  color: rgb(39, 38, 38);
-}
-
 section {
   font-family: "Nova Mono";
-  margin-top: 5rem;
+  margin-top: 10rem;
   font-size: 2rem;
-  margin-left: 10%;
   height: 70vh;
+  text-align: center;
 }
 
 .root .backend {
@@ -96,8 +79,8 @@ section {
 }
 
 .sites {
-  display: grid;
-  grid-template-columns: 15rem 15rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .site {
@@ -166,12 +149,12 @@ section {
 }
 
 .designs {
-  display: grid;
-  grid-template-columns: 18rem 20rem 18rem;
+  height: 17rem;
 }
 
 .designs img {
   max-height: 15rem;
+  margin-left: 25%;
 }
 
 a, a:visited {
@@ -185,3 +168,6 @@ a:hover {
   cursor: pointer;
 }
 
+#contact h2 {
+  margin-top: 10rem;
+}
