@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 0.8vw;
 }
 
 body {
@@ -26,6 +27,9 @@ body {
 
 h4 {
   padding-top: 10rem;
+  position: absolute;
+  left: 55rem;
+  top: 15rem;
   font-family: "Handlee";
   color: rgb(131, 130, 130);
 }
@@ -35,7 +39,7 @@ h4:after {
   height: 1.5rem;
   width: 1.5rem;
   position: absolute;
-  left: 30rem;
+  left: -5rem;
   border-right: 3px solid rgb(66, 66, 66);
   border-bottom: 3px solid rgb(66, 66, 66);
   transform: rotate(45deg);
@@ -62,10 +66,13 @@ nav label {
 
 section {
   font-family: "Nova Mono";
-  margin-top: 10rem;
+  margin-top: 2rem;
   font-size: 2rem;
-  height: 70vh;
   text-align: center;
+}
+
+section h2 {
+  margin-bottom: 2rem;
 }
 
 .root .backend {
@@ -160,7 +167,7 @@ section {
 a, a:visited {
   color: rgb(109, 109, 109);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 a:hover {
@@ -168,6 +175,6 @@ a:hover {
   cursor: pointer;
 }
 
-#contact h2 {
-  margin-top: 10rem;
+#cta {
+  margin-bottom: 10rem;
 }
